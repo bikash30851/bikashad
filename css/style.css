@@ -213,21 +213,6 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -258,10 +243,6 @@ header{
 .hamburger::after {
     bottom: 6px;
 }
-
-
-
-
 
 
 /* Styling Intro Section */
@@ -393,11 +374,13 @@ header{
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
 .portfolio {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .portfolio__item {
