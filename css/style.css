@@ -461,6 +461,14 @@ header{
     padding: .5em;
 }
 
+/*Individual Portfolio Item Styles*/
+.portfolio__item--individual{
+    padding: 0 4em 2em;
+    margin: 0 auto;
+
+}
+
+
 
 
 
