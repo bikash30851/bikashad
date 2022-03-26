@@ -448,7 +448,11 @@ header{
 .portfolio__item--individual{
     padding: 0 4em 2em;
     margin: 0 auto;
+}
 
+.item__main--image {
+    width: auto;
+    height: 400px;
 }
 
 
