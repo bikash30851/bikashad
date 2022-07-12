@@ -303,7 +303,7 @@ header {
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/back3.jpg);
-    background-size: cover;
+    background-size:cover;
     background-blend-mode: hard-light;
     color: var(--clr-light);
     text-align: center;
@@ -398,6 +398,8 @@ header {
     text-align: center;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+    background-image: url(../img/back4.jpg);
+    background-size: cover;
 }
 
 .portfolio {
@@ -430,7 +432,7 @@ header {
     background:#111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1em 0 0 0.2em;
     font-size: var(--fs-h3);
 
 }
@@ -454,12 +456,13 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 0;
     padding: 0;
 }
 
 .social-list__item {
-    margin: 0.5em;
+    margin: 0 2em 0;
+    font-size: 50px;
 }
 
 .social-list__link {
