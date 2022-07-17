@@ -137,6 +137,26 @@
         </div>
     </section>
 
+    <section class="contact">
+        <div class = "contact-form">
+            <h1>Contact <span>Me</span></h1>
+            <p>Feel free to send me a message. I would love to collaborate on exciting projects.</p>
+            <form onsubmit="sendEmail(); reset(); return false;" action="">
+                <input type="" placeholder="Your Name" id="name" required>
+                <input type="email" name="email" id="email" placeholder="xyz@email.com" required>
+                <input type="" placeholder="Subject" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Please type your message here.">
+
+                </textarea>
+                <input type="submit" name="" value="Submit" class="btn">
+
+            </form>
+        </div>
+        <div class="contact-img">
+            <img src="img/contact.jpg" alt="contact-img"> 
+        </div>
+    </section>
+
     <!--Footer-->
     <footer class="footer">
         <a href="mailto:bikash30851@gmail.com" class="footer__link">bikash30851@gmail.com</a>
@@ -153,9 +173,33 @@
             2021</copyright>
     </footer>
 
+
+
+    
+
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/index.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "bikash30851@gmail.com",
+            Password : "password",
+            To : 'bikash30851@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Portfolio Contact Form Inquiry",
+            Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value + 
+                    + "<br> Message: " + document.getElementById("message").value
+
+
+        }).then(
+        message => alert("Message Sent Successfully!")
+        );
+    }
+</script>
 
 
 
