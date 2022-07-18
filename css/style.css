@@ -472,7 +472,7 @@ header {
 
 /*Contact Me Styles*/
 .contact {
-    background: black;
+    background: rgba(30, 31, 23, 0);
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -480,8 +480,8 @@ header {
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 6rem;
-    
-
+    background-image: url(../img/back3.jpg);
+    background-size: cover;
 }
 span{
     color:var(--clr-accent);
@@ -536,8 +536,7 @@ form textarea{
     section{
         padding: 80px 3%;
         transition: .2s;
-
-
+        
     }
 
 
