@@ -138,17 +138,14 @@ strong {
 }
 
 /* header  */
-.logo {
-    max-height: 50px;
-    max-width: 250px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
     width:100%;
-    position:absolute;
+    position:fixed;
+    z-index: 5;
+
 }
 
 .nav {
@@ -176,7 +173,7 @@ header {
     padding: 0;
 }
 .nav__link {
-    color:var(--clr-accent);
+    color:inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
@@ -331,7 +328,9 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+    border-top: 0.1em solid #f9004d;
 }
+
 
 @media(min-width: 800px) {
     .services{
@@ -413,6 +412,7 @@ header {
 }
 
 .portfolio__img {
+    object-fit: cover;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear; 
@@ -429,11 +429,12 @@ header {
 }
 
 .footer{
-    background:#111;
+    background: black;
     color: var(--clr-accent);
     text-align: center;
     padding: 1em 0 0 0.2em;
     font-size: var(--fs-h3);
+    border-top: 0.2em solid var(--clr-accent);
 
 }
 
@@ -471,7 +472,7 @@ header {
 
 /*Contact Me Styles*/
 .contact {
-    background: var(--clr-dark);
+    background: black;
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -479,6 +480,7 @@ header {
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 6rem;
+    
 
 }
 span{
