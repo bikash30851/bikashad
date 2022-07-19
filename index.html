@@ -183,17 +183,13 @@
 <script>
     function sendEmail(){
             Email.send({
-            Host : "smtp.gmail.com",
-            Username : "bikash30851@gmail.com",
-            Password : "password",
+            SecureToken: "bd9c4e3d-4f1f-4213-9842-7af1735fa92d",
             To : 'bikash30851@gmail.com',
             From : document.getElementById("email").value,
             Subject : "New Portfolio Contact Form Inquiry",
             Body : "Name: " + document.getElementById("name").value
                     + "<br> Email: " + document.getElementById("email").value + 
                     + "<br> Message: " + document.getElementById("message").value
-
-
         }).then(
         message => alert("Message Sent Successfully!")
         );
