@@ -256,9 +256,9 @@ header {
 }
 
 .intro {
-    position: absolute;
-    top: 8%;
-    left:18%;
+    position: relative;
+    top: 0;
+    left:0;
 }
 
 .intro__img {
@@ -451,13 +451,7 @@ header {
 .social-list__link:hover {
     opacity: .7;
     text-decoration: underline ;
-
 }
-.fa-github:hover {
-    --fa-flip-x: 1; 
-    --fa-flip-y: 0;
-    --fa-animation-duration: 3s;
-  }
 
 .social-list {
     list-style: none;
