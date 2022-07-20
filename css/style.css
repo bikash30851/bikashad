@@ -440,6 +440,7 @@ header {
 
 .footer__link {
     font-weight: var(--fw-bold);
+    color: inherit;
 }
 
 .footer a {
@@ -447,19 +448,14 @@ header {
     text-decoration: none;
 }
 
+
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
     text-decoration: underline ;
-
 }
-.fa-github:hover {
-    --fa-flip-x: 1; 
-    --fa-flip-y: 0;
-    --fa-animation-duration: 3s;
-  }
 
-.social-list {
+.ab{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -475,6 +471,8 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+
 
 /*Contact Me Styles*/
 .contact {
