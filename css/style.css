@@ -255,11 +255,21 @@ header {
     background-size: cover;
 }
 
+
 .intro {
     position: absolute;
     top: 8%;
     left:18%;
 }
+
+
+/*
+.intro {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+*/
 
 .intro__img {
     box-shadow: var(--bs);
