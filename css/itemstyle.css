@@ -542,6 +542,27 @@ form textarea{
 
 }
 
+@media (max-width: 1000px) {
+    .social-list__item {
+        margin: 0 1.5em 0;
+        font-size: 35px;
+    }
+    
+    .social-list__link {
+        padding: .5em;
+    }
+}
+
+@media (max-width: 700px) {
+    .social-list__item {
+        margin: 0 0.5em 0;
+        font-size: 30px;
+    }
+    
+    .social-list__link {
+        padding: .4em;
+    }
+}
 
 
 /*Individual Portfolio Item Styles*/
